@@ -28,7 +28,7 @@ jobs:
 
       - name: Compute checksums
         run: |
-          cd dist
+          cd ./build/bin/
           for file in *; do
             sha256sum "$file" > "$file.sha256"
           done
