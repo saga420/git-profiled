@@ -37,6 +37,6 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./build/bin/* ./build/bin/*.sha256
+          files: ./build/bin/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
