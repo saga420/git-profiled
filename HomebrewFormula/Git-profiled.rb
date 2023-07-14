@@ -23,7 +23,10 @@ class GitProfiled < Formula
   end
 
   def install
-    bin.install "git-profiled_#{OS.kernel_name.downcase}_#{Hardware::CPU.arch}" => "git-profiled"
+    os = OS.mac? ? "darwin" : "linux"
+    arch = Hardware::CPU.arm? ? "arm64" : "amd64"
+
+    bin.install "git-profiled_#{os}_#{arch}" => "git-profiled"
   end
 
   test do
