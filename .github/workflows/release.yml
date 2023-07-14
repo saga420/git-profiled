@@ -24,7 +24,7 @@ jobs:
 
       - name: Build binaries
         run: |
-          make release
+          make build
 
       - name: Compute checksums
         run: |
@@ -37,6 +37,6 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./dist/* ./dist/*.sha256
+          files: ./build/bin/* ./build/bin/*.sha256
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
