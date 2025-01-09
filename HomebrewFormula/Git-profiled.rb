@@ -7,18 +7,18 @@ class GitProfiled < Formula
   if OS.mac?
     if Hardware::CPU.intel?
       url "https://github.com/saga420/git-profiled/releases/download/v#{version}/git-profiled_darwin_amd64"
-      sha256 "2c7789bc26539e7b0949d889856275fd2958495f40ba73c5d6a89e862f0fc2f1"
+      sha256 "8fcf4a8f81e5d2c8f2f750d9498528487dda2706a1c0ceb6e2b19fce0d40daa7"
     else
       url "https://github.com/saga420/git-profiled/releases/download/v#{version}/git-profiled_darwin_arm64"
-      sha256 "77b9ef11805a13877685a71e7b221655a1ac358ce27ce44a18d4b3ca10c4ad98"
+      sha256 "6f944114d1ee30ed7dcbe5ed169d0fc56c593056c5ab18fc8fe52c16547b291b"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/saga420/git-profiled/releases/download/v#{version}/git-profiled_linux_amd64"
-      sha256 "422817289ccad9220f1c4ba548a8ab79144496a89148fd4e4974b41f0f428b48"
+      sha256 "71a40e9e8249abd7dcfe05c9b5d1ac911ed2b790d2e4f85923c5f2f4c6c75037"
     else
       url "https://github.com/saga420/git-profiled/releases/download/v#{version}/git-profiled_linux_arm64"
-      sha256 "9791ef2fd5796e5dc845e8c97979ad28b99217b02d3cd6a8d43f18f21c473b92"
+      sha256 "d40b0f204237afda989ab5ca632db07503ac3d11eccba6d6bb311ce7db0c52b3"
     end
   end
 
