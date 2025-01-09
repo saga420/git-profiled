@@ -1,7 +1,7 @@
 class GitProfiled < Formula
   desc "git-profiled: A utility for managing Git profiles"
   homepage "https://github.com/saga420/git-profiled"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   if OS.mac?
